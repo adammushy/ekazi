@@ -40,7 +40,9 @@ class JobCategories extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 12,
                   fontWeight: FontWeight.bold,
-                  color: colorApp,
+                  // color: colorApp,
+                  color: Colors.blue,
+
                   // decoration: TextDecoration.underline,
                 ),
               ),

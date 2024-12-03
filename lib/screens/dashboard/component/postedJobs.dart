@@ -70,7 +70,9 @@ class RecentJobs extends StatelessWidget {
                 style: TextStyle(
                     fontSize: 12,
                     fontWeight: FontWeight.bold,
-                    color: colorApp,
+                    // color: colorApp,
+                    color: Colors.blue,
+
                     // decoration: TextDecoration.underline,
                     
                     ),
@@ -80,7 +82,7 @@ class RecentJobs extends StatelessWidget {
         ),
         10.height,
         Container(
-          height: 200,
+          height: 240,
           child: ListView.builder(
             itemCount: jobs.length,
             scrollDirection: Axis.horizontal,
@@ -92,13 +94,14 @@ class RecentJobs extends StatelessWidget {
                   width: 220,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
-                    color: colorApp.withOpacity(0.1),
+                    // color: colorApp.withOpacity(0.1),
+                    color: Colors.white,
                   ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        height: 120,
+                        height: 150,
                         decoration: BoxDecoration(
                           borderRadius: const BorderRadius.only(
                             topLeft: Radius.circular(10),
@@ -159,7 +162,7 @@ class RecentJobs extends StatelessWidget {
                               'Deadline: ${job['deadline']}',
                               style: TextStyle(
                                 fontSize: 12,
-                                color: Colors.redAccent,
+                                color: Colors.orange,
                               ),
                               overflow: TextOverflow.ellipsis,
                             ),

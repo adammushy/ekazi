@@ -1,5 +1,5 @@
 import 'package:ekazi/constants/app_colors.dart';
-import 'package:ekazi/screens/dashboard/homescreen.dart';
+import 'package:ekazi/screens/dashboardscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -26,7 +26,8 @@ class MyApp extends StatelessWidget {
         ),
         // home: const MyHomePage(title: 'Flutter Demo Home Page'),
         // home: const SplashScreen(),
-        home: const HomeScreen(),
+        // home: const HomeScreen(),
+        home: const WADashboardScreen(),
       ),
     );
   }

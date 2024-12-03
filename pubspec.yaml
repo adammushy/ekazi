@@ -40,6 +40,7 @@ dependencies:
   nb_utils: ^7.0.7
   flutter_screenutil: ^5.9.3
   fan_carousel_image_slider: ^1.0.1
+  material_symbols_icons: ^4.2800.2
 
 dev_dependencies:
   flutter_test:
