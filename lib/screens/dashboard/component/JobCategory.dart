@@ -2,7 +2,6 @@
 
 import 'package:ekazi/constants/app_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:nb_utils/nb_utils.dart';
 
 class JobCategories extends StatelessWidget {
   final List<Map<String, dynamic>> jobCategories = [
@@ -12,6 +11,8 @@ class JobCategories extends StatelessWidget {
     {'name': 'Human Resources', 'count': 5},
     {'name': 'Design', 'count': 12},
   ];
+
+  const JobCategories({super.key});
 
   Color getRandomColor() {
     // Replace with your color generation logic
@@ -36,7 +37,12 @@ class JobCategories extends StatelessWidget {
               Text(
                 'View All',
                 textScaler: TextScaler.noScaling,
-                style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: colorApp, decoration: TextDecoration.underline), 
+                style: TextStyle(
+                  fontSize: 12,
+                  fontWeight: FontWeight.bold,
+                  color: colorApp,
+                  // decoration: TextDecoration.underline,
+                ),
               ),
             ],
           ),
@@ -47,11 +53,12 @@ class JobCategories extends StatelessWidget {
           child: Wrap(
             // spacing: 8,
             children: jobCategories.map((category) {
-              String categoryName = '${category['name']} (${category['count']})';
+              String categoryName =
+                  '${category['name']} (${category['count']})';
               return Padding(
                 padding: const EdgeInsets.only(right: 11.0, bottom: 10),
                 child: Container(
-                  decoration: BoxDecoration( 
+                  decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(30),
                     color: getRandomColor().withOpacity(0.1),
                   ),

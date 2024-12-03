@@ -71,7 +71,9 @@ class RecentJobs extends StatelessWidget {
                     fontSize: 12,
                     fontWeight: FontWeight.bold,
                     color: colorApp,
-                    decoration: TextDecoration.underline),
+                    // decoration: TextDecoration.underline,
+                    
+                    ),
               ),
             ],
           ),
@@ -126,7 +128,7 @@ class RecentJobs extends StatelessWidget {
                               job['company']!,
                               style: TextStyle(
                                 fontSize: 12,
-                                color: colorApp.withOpacity(0.5),
+                                color: colorApp.withOpacity(0.9),
                               ),
                               overflow: TextOverflow.ellipsis,
                             ),
@@ -138,7 +140,7 @@ class RecentJobs extends StatelessWidget {
                                   job['location']!,
                                   style: TextStyle(
                                     fontSize: 12,
-                                    color: colorApp.withOpacity(0.5),
+                                    color: colorApp.withOpacity(0.9),
                                   ),
                                   overflow: TextOverflow.ellipsis,
                                 ),

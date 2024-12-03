@@ -13,7 +13,7 @@ Widget addSlider() {
     imageFitMode: BoxFit.fill,
     expandImageWidth: double.infinity,
     imageRadius: 24,
-    slideViewportFraction: 0.9,
+    slideViewportFraction:1,
     isAssets: true,
     autoPlay: true,
     sliderHeight: 260,
