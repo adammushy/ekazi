@@ -23,7 +23,7 @@ class FeaturedCandidates extends StatelessWidget {
       },
       {
         'image': 'assets/images/profile.jpg',
-        'name': 'Alice Johnson',
+        'name': 'Alex Johnson',
         'position': 'UI/UX Designer',
         'location': 'Kilimanjaro, TZ',
         'status': null, // No status
@@ -52,6 +52,7 @@ class FeaturedCandidates extends StatelessWidget {
             children: [
               const Text(
                 'Featured Candidates',
+                textScaler: TextScaler.noScaling,
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
               GestureDetector(
@@ -59,8 +60,9 @@ class FeaturedCandidates extends StatelessWidget {
                   // Navigate to full candidate list
                   print('View All tapped');
                 },
-                child: Text(
+                child: const Text(
                   'View All',
+                  textScaler: TextScaler.noScaling,
                   style: TextStyle(
                     fontSize: 12,
                     fontWeight: FontWeight.bold,
