@@ -12,7 +12,7 @@ class JobCategories extends StatelessWidget {
     {'name': 'Design', 'count': 12},
   ];
 
-  const JobCategories({super.key});
+  JobCategories({super.key});
 
   Color getRandomColor() {
     // Replace with your color generation logic
